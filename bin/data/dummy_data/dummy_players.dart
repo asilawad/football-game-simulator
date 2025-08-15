@@ -1,0 +1,191 @@
+import '../../models/gameMembers/palyer.dart';
+import '../data_interface/player_provider.dart';
+
+class DummyPlayers implements PlayerProvider {
+  @override
+  List<Player> getPlayers(int teamNumber) {
+    return teamNumber == 1 ? team1Players : team2Players;
+  }
+
+  static List<Player> team1Players = [
+    Player(
+      id: 1,
+      name: 'Thibaut Courtois',
+      age: 31,
+      nationality: 'Belgian',
+      position: 'Goalkeeper',
+      jerseyNumber: 1,
+    ),
+    Player(
+      id: 2,
+      name: 'Dani Carvajal',
+      age: 31,
+      nationality: 'Spanish',
+      position: 'Right Back',
+      jerseyNumber: 2,
+    ),
+    Player(
+      id: 3,
+      name: 'Éder Militão',
+      age: 25,
+      nationality: 'Brazilian',
+      position: 'Center Back',
+      jerseyNumber: 3,
+    ),
+    Player(
+      id: 4,
+      name: 'David Alaba',
+      age: 31,
+      nationality: 'Austrian',
+      position: 'Center Back',
+      jerseyNumber: 4,
+    ),
+    Player(
+      id: 5,
+      name: 'Ferland Mendy',
+      age: 27,
+      nationality: 'French',
+      position: 'Left Back',
+      jerseyNumber: 5,
+    ),
+    Player(
+      id: 6,
+      name: 'Luka Modrić',
+      age: 37,
+      nationality: 'Croatian',
+      position: 'Midfielder',
+      jerseyNumber: 10,
+    ),
+    Player(
+      id: 7,
+      name: 'Toni Kroos',
+      age: 33,
+      nationality: 'German',
+      position: 'Midfielder',
+      jerseyNumber: 8,
+    ),
+    Player(
+      id: 8,
+      name: 'Aurélien Tchouaméni',
+      age: 23,
+      nationality: 'French',
+      position: 'Midfielder',
+      jerseyNumber: 18,
+    ),
+    Player(
+      id: 9,
+      name: 'Rodrygo',
+      age: 22,
+      nationality: 'Brazilian',
+      position: 'Forward',
+      jerseyNumber: 21,
+    ),
+    Player(
+      id: 10,
+      name: 'Karim Benzema',
+      age: 35,
+      nationality: 'French',
+      position: 'Forward',
+      jerseyNumber: 9,
+    ),
+    Player(
+      id: 11,
+      name: 'Cristiano Ronaldo',
+      age: 38,
+      nationality: 'Portuguese',
+      position: 'Forward',
+      jerseyNumber: 7,
+    ),
+  ];
+
+  static List<Player> team2Players = [
+    Player(
+      id: 12,
+      name: 'Marc-André ter Stegen',
+      age: 31,
+      nationality: 'German',
+      position: 'Goalkeeper',
+      jerseyNumber: 1,
+    ),
+    Player(
+      id: 13,
+      name: 'Ronald Araújo',
+      age: 24,
+      nationality: 'Uruguayan',
+      position: 'Center Back',
+      jerseyNumber: 4,
+    ),
+    Player(
+      id: 14,
+      name: 'Jules Koundé',
+      age: 25,
+      nationality: 'French',
+      position: 'Center Back',
+      jerseyNumber: 23,
+    ),
+    Player(
+      id: 15,
+      name: 'Alejandro Balde',
+      age: 20,
+      nationality: 'Spanish',
+      position: 'Left Back',
+      jerseyNumber: 28,
+    ),
+    Player(
+      id: 16,
+      name: 'Sergi Roberto',
+      age: 31,
+      nationality: 'Spanish',
+      position: 'Right Back',
+      jerseyNumber: 20,
+    ),
+    Player(
+      id: 17,
+      name: 'Frenkie de Jong',
+      age: 26,
+      nationality: 'Dutch',
+      position: 'Midfielder',
+      jerseyNumber: 21,
+    ),
+    Player(
+      id: 18,
+      name: 'Pedri',
+      age: 20,
+      nationality: 'Spanish',
+      position: 'Midfielder',
+      jerseyNumber: 8,
+    ),
+    Player(
+      id: 19,
+      name: 'Gavi',
+      age: 19,
+      nationality: 'Spanish',
+      position: 'Midfielder',
+      jerseyNumber: 6,
+    ),
+    Player(
+      id: 20,
+      name: 'Robert Lewandowski',
+      age: 35,
+      nationality: 'Polish',
+      position: 'Forward',
+      jerseyNumber: 9,
+    ),
+    Player(
+      id: 21,
+      name: 'Raphinha',
+      age: 26,
+      nationality: 'Brazilian',
+      position: 'Forward',
+      jerseyNumber: 22,
+    ),
+    Player(
+      id: 22,
+      name: 'Lionel Messi',
+      age: 36,
+      nationality: 'Argentinian',
+      position: 'Forward',
+      jerseyNumber: 10,
+    ),
+  ];
+}
