@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import '../utils/strategy_options.dart';
+import '../../utils/strategy_options.dart';
 
 class TeamStrategyChoosing {
   static String chooseStrategy() {
