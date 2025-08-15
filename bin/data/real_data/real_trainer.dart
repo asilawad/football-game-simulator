@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import '../data_interface/trainer_provider.dart';
+import 'team_strategy_input.dart';
 import '../../models/gameMembers/trainer.dart';
 
 class RealTrainer implements TrainerProvider {
@@ -17,13 +18,14 @@ class RealTrainer implements TrainerProvider {
     String trainerNationality = stdin.readLineSync()!;
 
     print('Enter Trainer strategy specialty:');
+    String teamStrategy = TeamStrategyChoosing.chooseStrategy();
 
     //create Trainer object
     return Trainer(
       name: trainerName,
       age: trainerAge,
       nationality: trainerNationality,
-      strategySpecialty: "",
+      strategySpecialty: teamStrategy,
     );
   }
 }
